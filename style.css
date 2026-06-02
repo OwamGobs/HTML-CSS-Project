@@ -1,0 +1,368 @@
+html {
+  height: 100%;
+}
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 66vh;
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(135deg, #3b8d3b 0%, #7fc27f 100%);
+  border-radius: 8px;
+  margin: 20px auto;
+  padding: 40px 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: lightgray;
+}
+
+main {
+  flex: 1;
+}
+
+/* Header styling for page layout and sticky top navigation */
+header {
+  background-color: green;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navigation bar layout */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+}
+
+/* Navigation link styling */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+  padding: 10px 15px;
+  background-color: green;
+  border-radius: 5px;
+}
+
+/* Hero section text alignment */
+/* Hover state for navigation links */
+nav a:hover {
+  background-color: green;
+}
+
+/* General section styling for page content */
+section {
+  background-color: white;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Center the skills heading inside the About page */
+.about h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.reflection-section {
+  text-align: center;
+  max-width: 900px;
+}
+
+.reflection-section p {
+  margin-bottom: 18px;
+  line-height: 1.9;
+}
+
+.hero {
+  text-align: center;
+}
+
+.profile {
+  width: 200px;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+table {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #e6f9e6;
+}
+
+/* Table styles */
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 20px 18px;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: lightgreen;
+}
+
+footer {
+  text-align: center;
+  background-color: green;
+  color: black;
+  padding: 15px;
+  margin-top: auto;
+}
+
+.goals-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.about-section {
+  text-align: center;
+  background-color: lightgray;
+  padding: 50px 20px;
+}
+
+.goals-section h1 {
+  margin-bottom: 10px;
+}
+
+.goal-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  width: 280px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0;
+}
+
+.card p {
+  padding: 0 15px 20px;
+  color: #555;
+}
+
+/* About Page Styles */
+/* Layout wrapper for the about section content */
+.about-content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* Container for the profile image */
+.about-image {
+  flex-shrink: 0;
+}
+
+/* Profile picture styling */
+.profile-pic {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text content container for the about details */
+.about-text {
+  flex: 1;
+}
+
+/* Paragraph styling inside the about text block */
+.about-text p {
+  line-height: 1.6;
+  color: black;
+}
+
+/* Hero Animation Styles */
+/* Main landing/banner section styling */
+.hero {
+  background: linear-gradient(135deg, #4caf50 0%, #81c784 100%);
+  color: white;
+  min-height: 66vh;
+  padding: 80px 40px;
+  overflow: hidden;
+  position: relative;
+  animation: hero-bounce 3s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+.hero .hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@keyframes hero-bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-16px);
+  }
+
+  60% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Journey Page Image Styling */
+/* Card wrapper for each journey entry */
+.journey-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Journey card image styling */
+.journey-card img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Text content container for the journey cards */
+.journey-card-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* Heading inside each journey card */
+.journey-card-text h2 {
+  margin-top: 0;
+}
+
+/* Paragraph text inside each journey card */
+.journey-card-text p {
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Hero animations removed: kept static hero for simpler presentation */
+
+/* Contact Page Styles */
+/* Container for the contact form section */
+.contact-section {
+  text-align: center;
+  max-width: 720px;
+  margin: 30px auto;
+  padding: 40px 24px;
+}
+
+/* Main heading for the contact page */
+.contact-section h1 {
+  margin-bottom: 16px;
+}
+
+/* Form wrapper with vertical stacking */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: stretch;
+  text-align: left;
+}
+
+/* Label styling for each form field */
+.contact-form label {
+  font-weight: bold;
+}
+
+/* Shared input and textarea styling */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Submit button appearance */
+.contact-form button {
+  width: fit-content;
+  align-self: center;
+  padding: 12px 26px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Hover state for the submit button */
+.contact-form button:hover {
+  opacity: 0.95;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+    width: 95%;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px;
+  }
+}

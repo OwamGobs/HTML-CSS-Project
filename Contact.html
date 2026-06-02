@@ -1,0 +1,82 @@
+<!doctype html>
+<!-- Contact page for sending messages to the site owner -->
+<html lang="en">
+  <head>
+    <!-- Page metadata and stylesheet link -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Top navigation header -->
+      <nav class="navbar">
+        <!-- Navigation links for all pages -->
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="journey.html">Journey</a>
+        <a href="goals.html">Goals</a>
+        <a href="reflection.html">Reflection</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Main page content -->
+      <section class="contact-section">
+        <!-- Contact section with heading and form -->
+        <h1>Contact Me</h1>
+
+        <p>
+          Feel free to send me any message (Could be a question, feedback, or
+          just a hello!) using the form below.
+        </p>
+
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xvzyedoz"
+          method="POST"
+        >
+          <!-- Name field -->
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+
+          <!-- Email field -->
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <!-- Message field -->
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Type your message here..."
+            required
+          ></textarea>
+
+          <!-- Submit button -->
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Footer copyright notice -->
+      <p>2026 Owam Gobinca. My Personal Portfolio. All rights reserved</p>
+    </footer>
+  </body>
+</html>
