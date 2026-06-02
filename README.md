@@ -64,17 +64,6 @@ The purpose of this website is to present my background, skills, learning journe
 3. Open the index.html file in your web browser.
 4. Navigate through the website using the navigation bar.
 
-## Screenshots
-
-Add screenshots of:
-
-* Home Page
-* About Me Page
-* Journey Page
-* Goals Page
-* Reflection Page
-* Contact Page
-
 ## Challenges Faced
 
 One of the main challenges was designing a website that was both visually appealing and easy to navigate. I also faced challenges with styling pages consistently, organizing content, and ensuring that all links and images worked correctly. Creating responsive layouts and positioning elements properly required problem-solving and attention to detail.
@@ -85,7 +74,6 @@ Through this project, I learned how to build a complete multi-page website using
 
 ## Future Improvements
 
-* Add JavaScript for interactivity
 * Include animations and transitions
 * Improve the contact form functionality
 * Add more projects to showcase my skills
@@ -93,9 +81,8 @@ Through this project, I learned how to build a complete multi-page website using
 * Create a dark mode option
 
 ## My Name
-
 Owam Gobinca
 
 ## GitHub Pages / Deployed Link
-
+https://github.com/OwamGobs/HTML-CSS-Project.git
 
