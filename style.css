@@ -222,8 +222,10 @@ footer {
 .hero {
   background: linear-gradient(135deg, #4caf50 0%, #81c784 100%);
   color: white;
-  min-height: 66vh;
-  padding: 80px 40px;
+  min-height: 40vh;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 45px 30px;
   overflow: hidden;
   position: relative;
   animation: hero-bounce 3s ease-in-out infinite;
@@ -231,7 +233,7 @@ footer {
 }
 
 .hero .hero-content {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
