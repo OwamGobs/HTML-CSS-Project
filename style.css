@@ -8,11 +8,13 @@ html {
   justify-content: center;
   min-height: 66vh;
   color: white;
-  overflow: hidden;
-  background: linear-gradient(135deg, #3b8d3b 0%, #7fc27f 100%);
-  border-radius: 8px;
-  margin: 20px auto;
-  padding: 40px 20px;
+}
+
+.welcome-heading {
+  font-size: 2.4rem;
+  margin: 0;
+  letter-spacing: 1px;
+  color: green;
 }
 
 body {
@@ -63,12 +65,12 @@ nav a {
 /* Hero section text alignment */
 /* Hover state for navigation links */
 nav a:hover {
-  background-color: green;
+  background-color: #2e8b57;
 }
 
 /* General section styling for page content */
 section {
-  background-color: white;
+  /* background: linear-gradient(135deg, #4caf50 0%, #f1f8f1 100%); */
   width: 80%;
   margin: 20px auto;
   padding: 20px;
@@ -105,24 +107,45 @@ section {
 table {
   width: 90%;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 30px auto;
   border-collapse: collapse;
-  background-color: #e6f9e6;
+  overflow: hidden;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Table styles */
-table,
-th,
-td {
-  border: 1px solid black;
+th {
+  background: #2e7d32;
+  color: white;
+  padding: 18px;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
-th,
 td {
-  padding: 20px 18px;
-  font-weight: bold;
+  padding: 16px 18px;
+  border-bottom: 1px solid #e0e0e0;
   font-size: 16px;
-  background-color: lightgreen;
+}
+
+tr:nth-child(even) {
+  background-color: #f5fff5;
+}
+
+tr:hover {
+  background-color: #d8f3dc;
+  transition: 0.3s ease;
+}
+
+td:first-child {
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+td:last-child {
+  color: #555;
 }
 
 footer {
@@ -138,11 +161,11 @@ footer {
   padding: 50px 20px;
 }
 
-.about-section {
+/* .about-section {
   text-align: center;
   background-color: lightgray;
   padding: 50px 20px;
-}
+} */
 
 .goals-section h1 {
   margin-bottom: 10px;
@@ -185,22 +208,88 @@ footer {
 }
 
 /* About Page Styles */
-/* Layout wrapper for the about section content */
-.about-content {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
+/* ABOUT SECTION */
+.about {
+  padding: 60px 10%;
+  background: #f4f7f5;
 }
 
-/* Container for the profile image */
+.about h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2d6a4f;
+  margin-bottom: 15px;
+}
+
+.about > p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Main About Card */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Image Container */
 .about-image {
   flex-shrink: 0;
 }
 
+/* Profile Image */
+.profile-pic {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #40916c;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Text Area */
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Skills Heading */
+.about h2 {
+  text-align: center;
+  margin-top: 50px;
+  color: #2d6a4f;
+  font-size: 2rem;
+}
+/* Layout wrapper for the about section content */
+/* .about-content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+} */
+
+/* Container for the profile image */
+/* .about-image {
+  flex-shrink: 0;
+} */
+
 /* Profile picture styling */
 .profile-pic {
-  width: 300px;
-  height: 250px;
+  width: 400px;
+  height: 500px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -212,24 +301,35 @@ footer {
 }
 
 /* Paragraph styling inside the about text block */
-.about-text p {
+/* .about-text p {
   line-height: 1.6;
   color: black;
-}
+} */
 
 /* Hero Animation Styles */
 /* Main landing/banner section styling */
 .hero {
-  background: linear-gradient(135deg, #4caf50 0%, #81c784 100%);
   color: white;
-  min-height: 40vh;
+  min-height: 20vh;
+  max-width: 900px;
+  margin: 10px auto;
+  padding: 30px;
+  position: relative;
+}
+
+.home .profile-pic {
+  animation: hero-bounce 3s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  line-height: 1.8;
+  min-height: 20vh;
   max-width: 900px;
   margin: 20px auto;
   padding: 45px 30px;
-  overflow: hidden;
-  position: relative;
-  animation: hero-bounce 3s ease-in-out infinite;
-  transform-origin: center bottom;
 }
 
 .hero .hero-content {
@@ -257,8 +357,8 @@ footer {
 
 /* Journey Page Image Styling */
 /* Card wrapper for each journey entry */
-.journey-card {
-  display: flex;
+/* .journey-card { */
+/* display: flex;
   flex-wrap: wrap;
   gap: 20px;
   align-items: flex-start;
@@ -266,32 +366,153 @@ footer {
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
-}
+} */
 
 /* Journey card image styling */
-.journey-card img {
+/* .journey-card img {
   width: 100%;
   max-width: 320px;
   height: auto;
   display: block;
   border-radius: 10px;
-}
+} */
 
 /* Text content container for the journey cards */
-.journey-card-text {
+/* .journey-card-text {
   flex: 1;
   min-width: 280px;
-}
+} */
 
 /* Heading inside each journey card */
-.journey-card-text h2 {
+/* .journey-card-text h2 {
   margin-top: 0;
-}
+} */
 
 /* Paragraph text inside each journey card */
-.journey-card-text p {
+/* .journey-card-text p {
   margin-bottom: 14px;
   line-height: 1.6;
+} */
+
+/* ==========================
+   JOURNEY SECTION
+========================== */
+
+.journey-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.journey-section h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #ebefed;
+  position: relative;
+}
+
+.journey-section h1::after {
+  content: "";
+  width: 80px;
+    color: green;
+  height: 4px;
+  background: white;
+  display: block;
+  margin: 12px auto;
+  border-radius: 10px;
+}
+
+.journey-title {
+  color: green;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+}
+
+/* ==========================
+   JOURNEY CARDS
+========================== */
+
+.journey-card {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 50px;
+  padding: 30px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.journey-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(82, 183, 136, 0.25);
+}
+
+/* Alternate card layout */
+.journey-card:nth-child(3) {
+  flex-direction: row-reverse;
+}
+
+/* ==========================
+   IMAGES
+========================== */
+
+.journey-card img {
+  width: 100%;
+  max-width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+}
+
+.journey-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ==========================
+   TEXT CONTENT
+========================== */
+
+.journey-card-text {
+  flex: 1;
+}
+
+.journey-card-text h2 {
+  color: #125738;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.journey-card-text p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media (max-width: 768px) {
+  .journey-card,
+  .journey-card:nth-child(3) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .journey-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .journey-card img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .hero h1 {
