@@ -66,7 +66,7 @@ The purpose of this website is to present my background, skills, learning journe
 
 ## Challenges Faced
 
-One of the main challenges was designing a website that was both visually appealing and easy to navigate. I also faced challenges with styling pages consistently, organizing content, and ensuring that all links and images worked correctly. Creating responsive layouts and positioning elements properly required problem-solving and attention to detail.
+One of the main challenges was designing a website that was both visually appealing and easy to navigate. I  faced challenges with styling pages consistently, organizing content, and ensuring that all links and images worked correctly. Creating responsive layouts and positioning elements properly required problem-solving and attention to detail. 
 
 ## What I Learned
 
