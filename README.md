@@ -1,6 +1,27 @@
 # HTML-CSS-Project
 # Personal Portfolio Website
 
+## Vue application
+
+The portfolio is now a Vite-powered Vue single-page application. The original
+HTML pages remain in the repository as reference material, while the Vue app is
+the default entrypoint.
+
+### Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+### Build for production
+
+```bash
+npm run build
+```
+
+Routes are available for Home, About, Journey, Goals, Reflection, and Contact.
+
 ## Project Name
 
 Personal Portfolio Website

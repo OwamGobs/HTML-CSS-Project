@@ -1,0 +1,5 @@
+<template>
+  <section class="page-section narrow-page"><div class="section-heading"><p class="eyebrow">02 / Progress in motion</p><h1>My learning journey</h1></div>
+    <div class="journey-list"><article class="journey-item"><img src="/pictures/high_school.png" alt="Learning Delphi in high school" /><div><p class="eyebrow">Where it all began</p><h2>Curiosity became a craft</h2><p>My journey into software development began when I started learning Delphi in high school. I was fascinated by the ability to create software and solve problems through coding. This early exposure sparked my interest in programming.</p></div></article><article class="journey-item reverse"><img src="/pictures/lifechoices.jpg" alt="Growing as a developer" /><div><p class="eyebrow">Where I am now</p><h2>Practice builds confidence</h2><p>At Life Choices Academy I am currently learning Python, HTML, CSS, and JavaScript. I am gaining experience creating projects, debugging code, and applying programming concepts in every exercise.</p><p>Through practice and projects, I have strengthened my confidence in solving problems independently.</p></div></article></div>
+  </section>
+</template>
