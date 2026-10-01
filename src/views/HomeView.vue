@@ -8,7 +8,6 @@
     </div>
     <div class="home-portrait reveal reveal-delay">
       <div class="portrait-frame"><img src="/pictures/Profile_picture.jpg" alt="Portrait of Owam Gobinca" /></div>
-      <p>Currently learning<br /><strong>Python / HTML / CSS / JavaScript</strong></p>
     </div>
   </section>
 </template>
